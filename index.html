@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bibek Sharma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="hover-target logo">BIBEK SHARMA</h1>
+    <ul class="navi">
+      <li><h3 class="hover-target"><a href="index.html" class="active">Home</a></h3></li>
+      <li><h3 class="hover-target"><a href="#" onclick="openProfile()">Profile</a></h3></li>
+      <li><h3 class="hover-target"><a href="#" onclick="openProjects()">Projects</a></h3></li>
+      <li><h3 class="hover-target"><a href="#" onclick="openContact()">Contact</a></h3></li>
+    </ul>
+  </header>
+
+  <section>
+    <div class="hover-target">
+      <h1><p class="welcome">Hello Everyone!!</p></h1>
+      <p class="welcome" style="top: 355px;">Welcome to my Website.</p>
+    </div>
+  </section>
+
+  <div class="custom-cursor"></div>
+
+  <!-- Profile Window -->
+  <div class="draggable-window" id="profileWindow">
+    <div class="window-header" id="dragHandle">
+      <span class="title">🪪 Profile</span>
+      <button class="close-btn" onclick="closeProfile()">×</button>
+    </div>
+    <div class="window-body">
+      <h2 class="glow">Greetings!!</h2>
+      <p>I am Bibek Sharma Bhandari and I am 18 Years Old.I am currently pursuing my BSc.CSIT degree at SOCH College of IT. This is my Profile Page of the website.</p>
+    </div>
+  </div>
+
+  <!-- Projects Window -->
+  <div class="draggable-window" id="projectsWindow">
+    <div class="window-header" id="dragProjects">
+      <span class="title">📁 Projects</span>
+      <button class="close-btn" onclick="closeProjects()">×</button>
+    </div>
+    <div class="window-body">
+      <h2 class="glow">My Projects</h2>
+      <p>Project details and it's glimpse comes here.</p>
+    </div>
+  </div>
+
+  <!-- Contact Window -->
+  <div class="draggable-window" id="contactWindow">
+    <div class="window-header" id="dragContact">
+      <span class="title">📞 Contact</span>
+      <button class="close-btn" onclick="closeContact()">×</button>
+    </div>
+    <div class="window-body">
+      <h2 class="glow">Get in Touch</h2>
+      <p>Phone No.98XXXXXXXX</p>
+      <p>Email:bibeksharma1092@gmail.com</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
